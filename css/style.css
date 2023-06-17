@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color:#EDF2F9;
+    --box-shadow:0px 7px 30px -20px;
+    --bg-color:#FFFFFF;
+    --text-color:#5E6E82;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    display: flex;
+    margin: 0px 10px;
+    gap: 20px;
+}
+
+.left-sidebar{
+    flex-basis: 20%;
+    position: relative;
+   
+}
+.right-content{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content-holder{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: scroll;
+    width: 20%;
+}
+.sidebar-content-holder::-webkit-scrollbar{
+    width: 20px;
+}
+.siderbarul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.siderbarul > li{
+    list-style: none;
+}
+.siderbarul li a{
+    color: var(--text-color);
+}
+/*  */
+.topbarnar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.searchbar{
+    width: 500px;
+    background-color: var(--bg-color);
+    border-radius: 16px;
+}
+.searchbar>button{
+    padding: 10px;
+    border: 0;
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+.searchbar>input{
+    width: 90%;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 16px;
+
+}
+.topbarul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* salesandtotal */
+
+.salesandtotal{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+}
+
+.weeklydiv{
+    background-color: var(--bg-color);
+    width: 450px;
+    box-shadow: var(--box-shadow);
+   height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.numbersalesdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.numbersalesdiv h1{
+    margin: 0;
+    font-size: 16px;
+}
+
+/* table */
+.tablesection{
+    box-shadow: var(--box-shadow);
+}
+.table-image{
+    width: 80px;
+}
+
